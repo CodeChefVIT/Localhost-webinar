@@ -21,7 +21,7 @@
 
 #### Directions to Install
 ```bash
-$ git clone https://github.com/CodeChefVIT/<Project>
+$ git clone https://github.com/CodeChefVIT/Localhost-webinar
 $ cd Localhost-webinar
 $ pip3 install -r requirements.txt
 ```
