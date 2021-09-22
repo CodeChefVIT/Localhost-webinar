@@ -22,5 +22,4 @@ async def root():
 @app.post("/submit")
 async def post_root(request: str = Form(...)):
     """ To submit request """
-    # msg = request.body()
     return "Hello " + request
