@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - 8000:8000
+      - 80:8000
     labels:
       - "traefik.http.middlewares.test-ratelimit.ratelimit.sourcecriterion.ipstrategy.depth=2"
       - "traefik.http.middlewares.test-ratelimit.ratelimit.average=100"
