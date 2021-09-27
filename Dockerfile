@@ -15,10 +15,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY . /app
 
 # Install dependencies
-RUN pip3 install fastapi uvicorn starlette
-RUN apt install -y python3
 RUN pip3 install -r requirements.txt
-RUN pip3 install python-multipart
 
 # define the port number the container should expose
 EXPOSE 8000

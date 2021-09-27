@@ -12,7 +12,7 @@ app.add_middleware(
 )
 
 
-# get method with query parameter
+# get method
 @app.get("/")
 async def root():
     return "Ok Working!"
@@ -21,5 +21,5 @@ async def root():
 # post method function
 @app.post("/submit")
 async def post_root(request: str = Form(...)):
-    """ To submit request """
+    """To submit request"""
     return "Hello " + request
