@@ -20,6 +20,6 @@ async def root():
 
 # post method function
 @app.post("/submit")
-async def post_root(request: str = Form(...)):
+async def post_root(name: str = Form(...)):
     """To submit request"""
-    return "Hello " + request
+    return {"name": name}
