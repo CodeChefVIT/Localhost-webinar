@@ -18,9 +18,9 @@ onHostRule = true
   entryPoint = "http"
 [[acme.domains]]
    main = "codechefvit.com"
-   sans = ["localhost-deployment.codechefvit.com"]
+   sans = ["localhost.codechefvit.com"]
 
 [docker]
-domain = "localhost-deployment.codechefvit.com"
+domain = "localhost.codechefvit.com"
 watch = true
 network = "web"

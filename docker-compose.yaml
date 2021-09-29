@@ -9,7 +9,7 @@ services:
       - "traefik.http.middlewares.test-ratelimit.ratelimit.average=100"
       - "traefik.http.middlewares.test-ratelimit.ratelimit.burst=50"
       - traefik.backend=web
-      - traefik.frontend.rule=Host:localhost-deployment.codechefvit.com
+      - traefik.frontend.rule=Host:localhost.codechefvit.com
       - traefik.docker.network=web
       - traefik.port=8000
     networks:
